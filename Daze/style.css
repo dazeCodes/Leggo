@@ -75,9 +75,9 @@ main {
 	width: 300px;
 	/* background-color: royalblue; */
 	padding-top: 16px;
-	padding-right: 30px;
+	padding-right: 6px;
 	padding-bottom: 16px;
-	padding-left: 30px;
+	padding-left: 6px;
 	flex-direction: column;
 }
 .total {
@@ -88,6 +88,7 @@ main {
 	justify-content: space-between;
 	/* background-color: red; */
 	width: 100%;
+	padding: 0 16px;
 }
 .total div p:nth-child(1) {
 	font-size: 0.8em;
@@ -134,16 +135,6 @@ main {
 	transition-duration: 0.3s;
 	transition-timing-function: ease;
 	transition-delay: 0s;
-	transition-property: background;
-	background-image: initial;
-	background-position-x: initial;
-	background-position-y: initial;
-	background-size: initial;
-	background-repeat-x: initial;
-	background-repeat-y: initial;
-	background-attachment: initial;
-	background-origin: initial;
-	background-clip: initial;
 	appearance: none;
 	border: none;
 	outline-color: initial;
@@ -153,6 +144,18 @@ main {
 	actualheight: 48;
 	background-color: rgb(255, 255, 255);
 	color: rgb(103, 113, 132);
+}
+.others img{
+	margin-right: 10px;
+}
+.img-dash{
+	width: 18px;
+}
+.img-btc{
+	width: 24px;
+}
+.img-dollar, .img-euro{
+	width: 24px;
 }
 .others .dashboard:hover {
 	background-color: rgb(216, 235, 253);
