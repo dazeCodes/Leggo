@@ -158,10 +158,10 @@ main {
 	width: 24px;
 }
 .each-us img{
-	margin-right: 10px;
+	margin-right: 16px;
 }
 .each-btc{
-	width: 36px;
+	width: 32px;
 }
 .others .dashboard:hover {
 	background-color: rgb(216, 235, 253);
