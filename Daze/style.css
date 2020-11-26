@@ -45,6 +45,14 @@ ul {
 	font-weight: 700;
 	font-size: 0.92em;
 }
+nav ul li{
+	display: flex;
+	align-items: center;
+}
+nav ul li img{
+	width: 16px;
+	margin-right: 6px;
+}
 nav ul li:nth-child(2n) {
 	color: rgb(53, 63, 82);
 }
