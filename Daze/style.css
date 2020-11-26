@@ -145,7 +145,7 @@ main {
 	background-color: rgb(255, 255, 255);
 	color: rgb(103, 113, 132);
 }
-.others img{
+.others img, .final img{
 	margin-right: 10px;
 }
 .img-dash{
@@ -156,6 +156,12 @@ main {
 }
 .img-dollar, .img-euro{
 	width: 24px;
+}
+.each-us img{
+	margin-right: 10px;
+}
+.each-btc{
+	width: 36px;
 }
 .others .dashboard:hover {
 	background-color: rgb(216, 235, 253);
@@ -362,6 +368,8 @@ main {
 	cursor : inherit;
 	display : block;
 	opacity : 1;
+	display: flex;
+	align-items: center;
 }
 .each-total .each-cur{
 	display: flex;
