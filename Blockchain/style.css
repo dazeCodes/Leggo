@@ -6,13 +6,13 @@
 	font-family: 'Inter', sans-serif;
 }
 body::-webkit-scrollbar {
-    display: none;
+	display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
 }
 header {
 	width: 100%;
@@ -54,18 +54,18 @@ ul {
 	font-weight: 700;
 	font-size: 0.92em;
 }
-nav ul li{
+nav ul li {
 	display: flex;
 	align-items: center;
 }
-nav ul li img{
+nav ul li img {
 	width: 16px;
 	margin-right: 6px;
 }
-nav ul li .swap{
+nav ul li .swap {
 	width: 24px;
 }
-nav ul li .buy{
+nav ul li .buy {
 	width: 19px;
 }
 nav ul li:nth-child(2n) {
@@ -102,6 +102,10 @@ main {
 	padding-bottom: 16px;
 	padding-left: 6px;
 	flex-direction: column;
+}
+/* navigation buttons */
+.dashboard {
+	background-color: rgb(216, 235, 253) !important;
 }
 .total {
 	-webkit-font-smoothing: antialiased;
@@ -168,22 +172,24 @@ main {
 	background-color: rgb(255, 255, 255);
 	color: rgb(103, 113, 132);
 }
-.others img, .final img{
+.others img,
+.final img {
 	margin-right: 10px;
 }
-.img-dash{
+.img-dash {
 	width: 18px;
 }
-.img-btc{
+.img-btc {
 	width: 24px;
 }
-.img-dollar, .img-euro{
+.img-dollar,
+.img-euro {
 	width: 24px;
 }
-.each-us img{
+.each-us img {
 	margin-right: 16px;
 }
-.each-btc{
+.each-btc {
 	width: 32px;
 }
 .others .dashboard:hover {
@@ -203,12 +209,26 @@ main {
 .others .ether:hover {
 	background-color: rgba(71, 59, 203, 0.25);
 }
+.others .bitcoin-cash:hover {
+	background-color: rgb(226, 240, 211);
+}
+.others .stellar:hover,
+.others .algorand:hover {
+	background-color: rgb(191, 191, 191);
+}
+.others .usdigital:hover {
+	background-color: rgb(191, 212, 202);
+}
+.others .tether:hover {
+	background-color: rgb(201, 231, 222);
+}
 
 .final {
 	border-top: 1px solid rgb(240, 242, 247);
 	/* margin-top: 8px; */
 }
-.dashboard-component {
+.dashboard-component,
+.bitcoin-component {
 	width: calc(100% - 250px);
 	-webkit-font-smoothing: antialiased;
 	box-sizing: border-box;
@@ -225,8 +245,7 @@ main {
 	padding-right: 30;
 	padding-bottom: 16;
 	padding-left: 30;
-	actualwidth: 1513;
-	actualheight: 868;
+	/* background-color: red; */
 }
 .left-side {
 	-webkit-font-smoothing: antialiased;
@@ -301,7 +320,7 @@ main {
 	opacity: 1;
 	position: relative;
 }
-.slider{
+.slider {
 	-webkit-font-smoothing: antialiased;
 	display: flex;
 	flex-direction: row;
@@ -315,10 +334,10 @@ main {
 	border-bottom-left-radius: 8px;
 	background-color: rgb(240, 242, 247);
 	margin-bottom: 24;
-	actualWidth: 520;
-	actualHeight: 45;
+	actualwidth: 520;
+	actualheight: 45;
 }
-.slider button{
+.slider button {
 	-webkit-font-smoothing: antialiased;
 	position: relative;
 	padding-top: 12;
@@ -339,21 +358,21 @@ main {
 	margin-bottom: 2;
 	margin-left: 2;
 	cursor: pointer;
-	color: rgb(152,169,202);
+	color: rgb(152, 169, 202);
 	transition-duration: 0.3s, 0.3s;
 	transition-timing-function: ease, ease;
 	transition-delay: 0s, 0s;
 	transition-property: color, background-color;
-	actualWidth: 130;
-	actualHeight: 17;
+	actualwidth: 130;
+	actualheight: 17;
 	border: none;
 }
-.slider .active{
-	background-color : rgb(255, 255, 255);
-	color : rgb(12, 108, 242);
-	box-shadow : rgba(5, 24, 61, 0.1) 0px 4px 8px;
+.slider .active {
+	background-color: rgb(255, 255, 255);
+	color: rgb(12, 108, 242);
+	box-shadow: rgba(5, 24, 61, 0.1) 0px 4px 8px;
 }
-.total-others{
+.total-others {
 	display: flex;
 	-webkit-font-smoothing: antialiased;
 	flex-grow: 1;
@@ -369,64 +388,64 @@ main {
 	border-bottom-width: 1;
 	border-bottom-style: solid;
 	border-bottom-color: rgb(240, 242, 247);
-	actualWidth: 520;
-	actualHeight: 40;
+	actualwidth: 520;
+	actualheight: 40;
 }
-.each-total{
-	-webkit-font-smoothing : antialiased;
-	display : flex;
-	-webkit-box-align : center;
-	align-items : center;
-	-webkit-box-pack : justify;
-	justify-content : space-between;
+.each-total {
+	-webkit-font-smoothing: antialiased;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
 }
-.each-total .each-us{
-	-webkit-font-smoothing : antialiased;
-	font-weight : 500;
-	font-size : 20px;
-	line-height : inherit;
-	text-transform : none;
-	font-style : normal;
-	color : rgb(53, 63, 82);
-	cursor : inherit;
-	display : block;
-	opacity : 1;
+.each-total .each-us {
+	-webkit-font-smoothing: antialiased;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: inherit;
+	text-transform: none;
+	font-style: normal;
+	color: rgb(53, 63, 82);
+	cursor: inherit;
+	display: block;
+	opacity: 1;
 	display: flex;
 	align-items: center;
 }
-.each-total .each-cur{
+.each-total .each-cur {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-end;
 	height: 40px;
 }
-.each-total .each-cur p:nth-child(1){
-	-webkit-font-smoothing : antialiased;
-	font-weight : 600;
-	font-size : 16px;
-	line-height : inherit;
-	text-transform : none;
-	font-style : normal;
-	color : rgb(53, 63, 82);
-	cursor : pointer;
-	display : block;
-	opacity : 1;
+.each-total .each-cur p:nth-child(1) {
+	-webkit-font-smoothing: antialiased;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: inherit;
+	text-transform: none;
+	font-style: normal;
+	color: rgb(53, 63, 82);
+	cursor: pointer;
+	display: block;
+	opacity: 1;
 }
-.each-total .each-cur p:nth-child(2){
+.each-total .each-cur p:nth-child(2) {
 	font-size: 12px;
-	font-weight : 600;
-	font-size : 12px;
-	line-height : inherit;
-	text-transform : none;
-	font-style : normal;
-	color : rgb(152, 161, 178);
-	cursor : pointer;
-	display : block;
-	opacity : 1;
-	white-space : nowrap;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: inherit;
+	text-transform: none;
+	font-style: normal;
+	color: rgb(152, 161, 178);
+	cursor: pointer;
+	display: block;
+	opacity: 1;
+	white-space: nowrap;
 }
-.right-side	{
+.right-side {
 	-webkit-font-smoothing: antialiased;
 	display: flex;
 	flex-direction: column;
@@ -437,7 +456,7 @@ main {
 	align-items: center;
 	width: 100%;
 	max-width: 560px;
-	height: 542px;
+	height: 582px;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 	border-bottom-right-radius: 8px;
@@ -460,11 +479,11 @@ main {
 	border-image-width: initial;
 	border-image-outset: initial;
 	border-image-repeat: initial;
-	actualWidth: 598;
-	actualHeight: 540;
+	actualwidth: 598;
+	actualheight: 540;
 	margin-left: 30px;
 }
-.top-right-side{
+.top-right-side {
 	-webkit-font-smoothing: antialiased;
 	-webkit-box-pack: justify;
 	justify-content: space-between;
@@ -473,70 +492,71 @@ main {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	actualWidth: 598;
-	actualHeight: 139;
+	actualwidth: 598;
+	actualheight: 139;
 	padding: 30px 0;
-	height: 200px;
+	height: 300px;
 }
-.top-img{
+.top-img {
 	width: 24px;
 	margin-right: 10px;
 }
-.top-right-side p{
+.top-right-side p {
 	display: flex;
 	align-items: center;
 }
-.top-right-side p:nth-child(1){
-	-webkit-font-smoothing : antialiased;
-	font-weight : 600;
-	font-size : 18px;
-	line-height : inherit;
-	text-transform : none;
-	font-style : normal;
-	color : rgb(0, 0, 0);
-	cursor : pointer;
-	display : flex;
-	opacity : 1;
+.top-right-side p:nth-child(1) {
+	-webkit-font-smoothing: antialiased;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: inherit;
+	text-transform: none;
+	font-style: normal;
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+	display: flex;
+	opacity: 1;
 }
 
-.top-right-side p:nth-child(2){
-	-webkit-font-smoothing : antialiased;
-	font-family : Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-	font-weight : 400;
-	font-size : 12px;
-	line-height : inherit;
-	text-transform : none;
-	font-style : normal;
-	color : rgb(80, 89, 107);
-	cursor : inherit;
-	display : block;
-	opacity : 1;
+.top-right-side p:nth-child(2) {
+	-webkit-font-smoothing: antialiased;
+	font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: inherit;
+	text-transform: none;
+	font-style: normal;
+	color: rgb(80, 89, 107);
+	cursor: inherit;
+	display: block;
+	opacity: 1;
 }
-.top-right-side p:nth-child(3){
-	-webkit-font-smoothing : antialiased;
-	font-weight : 400;
-	font-size : 36px;
-	line-height : inherit;
-	text-transform : none;
-	font-style : normal;
-	color : rgb(13, 53, 120);
-	cursor : inherit;
-	display : block;
-	opacity : 1;
+.top-right-side p:nth-child(3) {
+	-webkit-font-smoothing: antialiased;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: inherit;
+	text-transform: none;
+	font-style: normal;
+	color: rgb(13, 53, 120);
+	cursor: inherit;
+	display: block;
+	opacity: 1;
 }
-.top-right-side p:nth-child(4){
+.top-right-side p:nth-child(4) {
 	-webkit-font-smoothing: antialiased;
 	font-weight: 600;
 	color: rgb(23, 207, 115);
 }
-.top-right-side p:nth-child(4) span{
-	color: #67718C;
+.top-right-side p:nth-child(4) span {
+	color: #67718c;
 	font-size: 14px;
 }
-.bottom-right-side{
+.bottom-right-side {
 	display: flex;
 }
-.bottom-right-side{
+.bottom-right-side {
 	-webkit-font-smoothing: antialiased;
 	display: flex;
 	flex-direction: row;
@@ -548,72 +568,74 @@ main {
 	bottom: 100px;
 	width: 100%;
 	z-index: 99;
-	actualWidth: 598;
-	actualHeight: 25;
+	actualwidth: 598;
+	actualheight: 25;
 }
-.middle-right-side{
+.middle-right-side {
 	height: 100%;
 	width: 100%;
 	background: url(./assets/img/graph-head.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
+	margin-bottom: -60px;
 }
-.bottom-right-side-end{
-	padding-top: 13%;
+.bottom-right-side-end {
+	padding-top: 17%;
 	background: url(./assets/img/graph-leg.png);
 	background-size: 100%;
 }
-.bottom-right-side button{
-	-webkit-font-smoothing : antialiased;
-	font-family : Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-	font-weight : 400;
-	font-size : 12px;
-	line-height : inherit;
-	text-transform : none;
-	font-style : normal;
-	cursor : pointer;
-	display : block;
-	opacity : 1;
-	border-top-width : 1;
-	border-right-width : 1;
-	border-bottom-width : 1;
-	border-left-width : 1;
-	border-top-style : solid;
-	border-right-style : solid;
-	border-bottom-style : solid;
-	border-left-style : solid;
-	border-color: rgb(177,184,199);
-	color: rgb(177,184,199);
-	background-color : rgb(255, 255, 255);
-	letter-spacing : 1px;
-	border-top-left-radius : 6px;
-	border-top-right-radius : 6px;
-	border-bottom-right-radius : 6px;
-	border-bottom-left-radius : 6px;
-	margin-right : 8;
-	margin-left : 8;
-	padding-top : 4;
-	padding-right : 6;
-	padding-bottom : 4;
-	padding-left : 6;
-	transition-duration : 0.3s, 0.3s, 0.3s;
-	transition-timing-function : ease, ease, ease;
-	transition-delay : 0s, 0s, 0s;
-	transition-property : color, border, background;
+.bottom-right-side button {
+	-webkit-font-smoothing: antialiased;
+	font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: inherit;
+	text-transform: none;
+	font-style: normal;
+	cursor: pointer;
+	display: block;
+	opacity: 1;
+	border-top-width: 1;
+	border-right-width: 1;
+	border-bottom-width: 1;
+	border-left-width: 1;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-color: rgb(177, 184, 199);
+	color: rgb(177, 184, 199);
+	background-color: rgb(255, 255, 255);
+	letter-spacing: 1px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	margin-right: 8;
+	margin-left: 8;
+	padding-top: 4;
+	padding-right: 6;
+	padding-bottom: 4;
+	padding-left: 6;
+	transition-duration: 0.3s, 0.3s, 0.3s;
+	transition-timing-function: ease, ease, ease;
+	transition-delay: 0s, 0s, 0s;
+	transition-property: color, border, background;
 }
 
- .bottom-right-side button:hover{
-	border-top-color : rgb(12, 108, 242);
-	border-right-color : rgb(12, 108, 242);
-	border-bottom-color : rgb(12, 108, 242);
-	border-left-color : rgb(12, 108, 242);
-	color : rgb(12, 108, 242);
- }
- .bottom-right-side .active{
-	background-color : rgb(12, 108, 242);
-	border : rgb(12, 108, 242);
-	color : rgb(255, 255, 255);
- }
+.bottom-right-side button:hover {
+	border-top-color: rgb(12, 108, 242);
+	border-right-color: rgb(12, 108, 242);
+	border-bottom-color: rgb(12, 108, 242);
+	border-left-color: rgb(12, 108, 242);
+	color: rgb(12, 108, 242);
+}
+.bottom-right-side .active {
+	background-color: rgb(12, 108, 242);
+	border: rgb(12, 108, 242);
+	color: rgb(255, 255, 255);
+}
 .bottom-right-side-end {
 	-webkit-font-smoothing: antialiased;
 	display: flex;
@@ -622,67 +644,69 @@ main {
 	z-index: 2;
 	padding-bottom: 24;
 	width: 100%;
-	actualWidth: 598;
-	actualHeight: 48;
+	actualwidth: 598;
+	actualheight: 48;
 }
-.bottom-right-side-end button{
--webkit-font-smoothing : antialiased;
- display : flex;
- flex-direction : row;
- -webkit-box-pack : center;
- justify-content : center;
- -webkit-box-align : center;
- align-items : center;
- width : 100%;
- min-width : 140px;
- height : 48px;
- padding-top : 10;
- padding-right : 15;
- padding-bottom : 10;
- padding-left : 15;
- box-sizing : border-box;
- user-select : none;
- text-align : center;
- text-decoration-line : none;
- text-decoration-style : initial;
- text-decoration-color : initial;
- vertical-align : middle;
- letter-spacing : normal;
- transition-duration : 0.2s;
- transition-timing-function : ease-in-out;
- transition-delay : 0s;
- transition-property : all;
- white-space : nowrap;
- line-height : 1;
- text-transform : none;
- font-family : Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
- font-size : 14px;
- font-weight : 600;
- cursor : pointer;
- opacity : 1;
- color : rgb(255, 255, 255);
- background-color : rgb(10, 86, 193);
- border-top-left-radius : 8px;
- border-top-right-radius : 8px;
- border-bottom-right-radius : 8px;
- border-bottom-left-radius : 8px;
- border-top-style : solid;
- border-right-style : solid;
- border-bottom-style : solid;
- border-left-style : solid;
- border-top-width : 1;
- border-right-width : 1;
- border-bottom-width : 1;
- border-left-width : 1;
- border-top-color : rgb(10, 86, 193);
- border-right-color : rgb(10, 86, 193);
- border-bottom-color : rgb(10, 86, 193);
- border-left-color : rgb(10, 86, 193);
- max-width : 200px;
- margin-right : 12;
- margin-left : 12;
+.bottom-right-side-end button {
+	-webkit-font-smoothing: antialiased;
+	display: flex;
+	flex-direction: row;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	align-items: center;
+	width: 100%;
+	min-width: 140px;
+	height: 48px;
+	padding-top: 10;
+	padding-right: 15;
+	padding-bottom: 10;
+	padding-left: 15;
+	box-sizing: border-box;
+	user-select: none;
+	text-align: center;
+	text-decoration-line: none;
+	text-decoration-style: initial;
+	text-decoration-color: initial;
+	vertical-align: middle;
+	letter-spacing: normal;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+	transition-property: all;
+	white-space: nowrap;
+	line-height: 1;
+	text-transform: none;
+	font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	opacity: 1;
+	color: rgb(255, 255, 255);
+	background-color: rgb(10, 86, 193);
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-width: 1;
+	border-right-width: 1;
+	border-bottom-width: 1;
+	border-left-width: 1;
+	border-top-color: rgb(10, 86, 193);
+	border-right-color: rgb(10, 86, 193);
+	border-bottom-color: rgb(10, 86, 193);
+	border-left-color: rgb(10, 86, 193);
+	max-width: 200px;
+	margin-right: 12;
+	margin-left: 12;
 }
-.bottom-right-side-end button:hover{
-	background-color : rgb(5, 63, 145);
+.bottom-right-side-end button:hover {
+	background-color: rgb(5, 63, 145);
 }
-rgb(240,242,247)
+
+/* bitcoin dashboard */
