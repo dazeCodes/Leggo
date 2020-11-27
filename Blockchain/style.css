@@ -212,13 +212,13 @@ main {
 }
 .dashboard-component,
 .bitcoin-component,
+.euro-component,
 .usd-component {
 	width: calc(100% - 250px);
 	box-sizing: border-box;
 	position: relative;
 	display: flex;
 	flex-direction: row;
-
 	justify-content: flex-start;
 	align-items: flex-start;
 	width: calc(100% - 250px);
@@ -670,6 +670,7 @@ main {
 
 /* bitcoin dashboard */
 .bitcoin-component,
+.euro-component,
 .usd-component {
 	flex-direction: column;
 }
