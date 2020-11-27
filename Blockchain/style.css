@@ -211,9 +211,9 @@ main {
 	/* margin-top: 8px; */
 }
 .dashboard-component,
-.bitcoin-component {
+.bitcoin-component,
+.usd-component {
 	width: calc(100% - 250px);
-
 	box-sizing: border-box;
 	position: relative;
 	display: flex;
@@ -669,7 +669,8 @@ main {
 }
 
 /* bitcoin dashboard */
-.bitcoin-component {
+.bitcoin-component,
+.usd-component {
 	flex-direction: column;
 }
 .b-top {
