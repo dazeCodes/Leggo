@@ -806,6 +806,9 @@ main {
 .num-tran-text p:nth-child(1) {
 	margin-bottom: 4px;
 }
+.num-tran-text p:nth-child(1) {
+	font-weight: 600;
+}
 .num-tran-text {
 	display: flex;
 	flex-direction: column;
