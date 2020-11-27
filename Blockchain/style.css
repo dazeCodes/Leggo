@@ -211,9 +211,9 @@ main {
 	/* margin-top: 8px; */
 }
 .dashboard-component,
-.bitcoin-component {
+.bitcoin-component,
+.usd-component {
 	width: calc(100% - 250px);
-
 	box-sizing: border-box;
 	position: relative;
 	display: flex;
@@ -669,7 +669,8 @@ main {
 }
 
 /* bitcoin dashboard */
-.bitcoin-component {
+.bitcoin-component,
+.usd-component {
 	flex-direction: column;
 }
 .b-top {
@@ -929,4 +930,48 @@ main {
 .b-btns-right button:nth-child(2) img {
 	width: 22px;
 	margin-right: 6px;
+}
+.b-tran-all {
+	-webkit-font-smoothing: antialiased;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	cursor: pointer;
+	padding-top: 14;
+	padding-right: 14;
+	padding-bottom: 14;
+	padding-left: 14;
+	justify-content: space-between;
+	border: 1px solid rgb(240, 242, 247);
+	border-radius: 8px;
+	margin-top: 16px;
+}
+.b-tran-all .add {
+	width: 36px;
+	height: 36px;
+	margin-right: 16px;
+}
+.buy-tran {
+	display: flex;
+}
+.buy-tran-text p:nth-child(1) {
+	font-weight: 600;
+	color: rgb(53, 63, 82);
+}
+.buy-tran-text p:nth-child(1),
+.to-tran-text p:nth-child(1),
+.num-tran-text p:nth-child(1) {
+	margin-bottom: 4px;
+}
+.num-tran-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.buy-tran-text p:nth-child(2),
+.to-tran-text p,
+.num-tran-text p:nth-child(2) {
+	font-weight: 600;
+	color: rgb(103, 113, 132);
+	font-size: 14px;
 }
