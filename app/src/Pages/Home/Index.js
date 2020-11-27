@@ -13,6 +13,7 @@ import bitcoinCash from "../../assets/img/bitcoin-cash.png";
 import Total from "./components/Total";
 
 export default function Home() {
+  
   return (
     <section className="dashboard-component">
       <div className="left-side">

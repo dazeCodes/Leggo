@@ -14,9 +14,7 @@ import tether from "../../assets/img/tether.png";
 import airdrop from "../../assets/img/airdrop.png";
 import image6 from "../../assets/img/image6.png";
 
-
-function SideBar() {
-
+function SideBar({ route, activeNav }) {
   return (
     <section className="navigation">
       <div className="total">
@@ -31,47 +29,51 @@ function SideBar() {
       </div>
 
       <div className="others">
-        <button className="dashboard">
-          <img src={home} className="img-dash" alt="" />
-          Dashboard
-        </button>
-        <button className="us">
+        <a href="/">
+          <button className={"dashboard" + activeNav("/")}>
+            <img src={home} className="img-dash" alt="" />
+            Dashboard
+          </button>
+        </a>
+        <button className={"us" + activeNav("/us-dollars")}>
           <img src={dollar} className="img-dollar" alt="" />
           U.S. Dollars
         </button>
-        <button className="euros">
+        <button className={"euros" + activeNav("/euro")}>
           <img src={euro} className="img-euro" alt="" />
           Euros
         </button>
-        <button className="pounds">
+        <button className={"pounds" + activeNav("/pounds")}>
           <img src={pound} className="img-dollar" alt="" />
           Pounds
         </button>
-        <button className="bitcoin">
-          <img src={bitcoin} className="img-btc" alt="" />
-          Bitcoin
-        </button>
-        <button className="ether">
+        <a href="/bitcoin">
+          <button className={"bitcoin" + activeNav("/bitcoin")}>
+            <img src={bitcoin} className="img-btc" alt="" />
+            Bitcoin
+          </button>
+        </a>
+        <button className={"ether" + activeNav("/ether")}>
           <img src={ether} className="img-btc" alt="" />
           Ether
         </button>
-        <button className="bitcoin-cash">
+        <button className={"bitcoin-cash" + activeNav("/bitcoin-cash")}>
           <img src={bitcoinCash} className="img-btc" alt="" />
           Bitcoin Cash
         </button>
-        <button className="stellar">
+        <button className={"stellar" + activeNav("/stellar")}>
           <img src={stellar} className="img-btc" alt="" />
           Stellar
         </button>
-        <button className="algorand">
+        <button className={"algorand" + activeNav("/algorand")}>
           <img src={algorand} className="img-btc" alt="" />
           Algorand
         </button>
-        <button className="usdigital">
+        <button className={"usdigital" + activeNav("/usdigital")}>
           <img src={usdigital} className="img-btc" alt="" />
           USD Digital
         </button>
-        <button className="tether">
+        <button className={"tether" + activeNav("/tether")}>
           <img src={tether} className="img-btc" alt="" />
           Tether
         </button>
