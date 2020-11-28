@@ -814,6 +814,7 @@ main {
 	flex-direction: column;
 	align-items: flex-end;
 }
+
 .buy-tran-text p:nth-child(2),
 .to-tran-text p,
 .num-tran-text p:nth-child(2) {
