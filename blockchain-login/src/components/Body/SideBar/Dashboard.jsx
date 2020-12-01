@@ -52,7 +52,7 @@ const Dashboard = ({ categories }) => {
           {duration.map((duration, index)=>{
             return(
           
-            <button  onClick={()=>setValue(index)} className={` ${index === value && "active"}`}>{duration}</button>
+            <button key={index} onClick={()=>setValue(index)} className={` ${index === value && "active"}`}>{duration}</button>
             )
           })}
         </div>
